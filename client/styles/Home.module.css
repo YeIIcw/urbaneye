@@ -1,0 +1,188 @@
+
+
+.home {
+    display: flex;
+}
+
+.main {
+    margin: 1rem 0;
+    padding: 0 1rem;
+    font-family: 'Inter';
+    /* background-color: antiquewhite; */
+    height: 100vh;
+    padding: 1rem;
+    min-width: 100px;
+
+
+    /* I hate this but IDK how else to do it */
+    width: calc(100vw - 300px - 200px); 
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+.line {
+    background-color: black;
+    height: 1px;
+}
+
+.callwrapper {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.card {
+    filter: var(--droplight);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+    width: auto;
+    /* -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear; */
+}
+
+
+.card:hover {
+    transition: outline-width .05s linear;
+    cursor: pointer;
+    outline: red 2px solid;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+.card p {
+    font-size: .8rem;
+}
+
+.card span {
+    font-weight: bold;
+}
+
+.cardactive {
+    /* card is fullscreen */
+    width: 100%;
+    padding: 2rem 4rem;
+    /* -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    transition: all 1s linear; */
+}
+
+.cardactive:hover {
+    transition: outline-width .05s linear;
+    cursor: default;
+    outline: none;
+}
+
+.titlewrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bodyactive {
+    margin: 1rem 0;
+    
+}
+
+.bodyactive h1 {
+    font-size: 2rem;
+}
+
+.bodyactive p{
+    font-size: 1.2rem;
+    padding: .5rem 0;
+}
+
+.log {
+    width: 100%;
+    /* background-color: green; */
+    padding: 1rem;
+    outline: black solid 1px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.logbody {
+    margin: .5rem 0;
+    max-height: 150px;
+    overflow-y: scroll;
+}
+
+.logbody p{
+    margin: .2rem 0;
+    font-weight: 700;
+}
+
+.logbody p span {
+    font-weight: 500;
+}
+
+.dispatch {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.dispatchicon {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-weight: 600;
+    border-radius: 1rem;
+}
+
+.icon1 {
+    background: linear-gradient(150deg, rgba(255,158,158,1) 34%, rgba(255,158,158,0.2) 100%);
+}
+
+.icon2 {
+    background: linear-gradient(150deg, rgba(128,128,255,1) 34%, rgba(128,128,255,0.2) 100%);
+}
+
+.icon3 {
+    background: linear-gradient(150deg, rgba(255,128,255,1) 34%, rgba(255,128,255,0.2) 100%);
+}
+
+
+.emergencies {
+    display: flex; 
+    overflow-x: scroll; 
+    padding-top: 2rem;
+    padding-bottom: 2rem; 
+    gap: 1.25rem; 
+    width: 100%; 
+}
+
+.attended {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.attendedselect {
+    filter: var(--droplight);
+    border: none;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.attendedselectactive {
+    background-color: darkslategray;
+    color:white;
+}

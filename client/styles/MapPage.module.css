@@ -1,0 +1,16 @@
+/* MapPage.module.css */
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .navbarContainer {
+    flex: 0 0 auto; /* Navbar stays at the top */
+  }
+  
+  .mapContainer {
+    flex: 1 1 auto; /* Map takes up the remaining space */
+    width: 100%; /* Full width */
+  }
+  

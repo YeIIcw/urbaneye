@@ -1,0 +1,15 @@
+.map {
+    height: 100vh;
+}
+
+.mapwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mapcontainer {
+    width: calc(100vw - 400px); 
+    height: calc(100vh);
+    position: relative;
+}
